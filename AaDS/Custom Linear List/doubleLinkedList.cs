@@ -10,6 +10,8 @@ public class doubleLinkedList
         public LinkedNode(int data)
         {
             Data = data;
+            Next = null;
+            Previous = null;
         }
     }
     
