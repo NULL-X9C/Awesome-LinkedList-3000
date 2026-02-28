@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace AaDS.Custom_Linear_List;
 
 public class myLinkedList<T>
@@ -191,3 +193,4 @@ public class myLinkedList<T>
         Console.WriteLine("null");
     }
 }
+
