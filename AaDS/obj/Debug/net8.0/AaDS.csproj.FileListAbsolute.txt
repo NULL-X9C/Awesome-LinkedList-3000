@@ -1,0 +1,14 @@
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.AssemblyInfoInputs.cache
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.AssemblyInfo.cs
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\bin\Debug\net8.0\AaDS.exe
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\bin\Debug\net8.0\AaDS.deps.json
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\bin\Debug\net8.0\AaDS.runtimeconfig.json
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\bin\Debug\net8.0\AaDS.dll
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\bin\Debug\net8.0\AaDS.pdb
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.dll
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\refint\AaDS.dll
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.pdb
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\AaDS.genruntimeconfig.cache
+C:\Users\Пользователь\RiderProjects\AaDS\AaDS\obj\Debug\net8.0\ref\AaDS.dll
