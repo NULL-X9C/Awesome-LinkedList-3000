@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace AaDS.Custom_Linear_List;
 
-public class myLinkedList<T>
+public class MyLinkedList<T>
 {
     public class Node<T>
     {
@@ -14,49 +14,49 @@ public class myLinkedList<T>
             Data = data;
         }
     }
-    public Node<T> head;
-    public Node<T> tail;
-    public int count;
+    public Node<T> Head;
+    public Node<T> Tail;
+    public int Count;
     
     // Добавление в начало
     public void AddFirst(T data) {
         Node<T> newNode = new Node<T>(data);
         
-        if (head == null)
+        if (Head == null)
         {
-            head = newNode;
-            tail = newNode;
+            Head = newNode;
+            Tail = newNode;
         }
         else {
-            newNode.Next = head;
-            head = newNode;
+            newNode.Next = Head;
+            Head = newNode;
         }
-        count++;
+        Count++;
     }
     
     // Добавление в конец
     public void AddLast(T data) {
         Node<T> newNode = new Node<T>(data);
         
-        if (head == null) 
+        if (Head == null) 
         {
-            head = newNode;
-            tail = newNode;
+            Head = newNode;
+            Tail = newNode;
         }
         else 
         {
-            tail.Next = newNode;
-            tail = newNode;
+            Tail.Next = newNode;
+            Tail = newNode;
         }
-        count++;
+        Count++;
     }
     // размер и пустота
-    public int Size() => count;
-    public bool IsEmpty() => count == 0;
+    public int Size() => Count;
+    public bool IsEmpty() => Count == 0;
 
     public bool Search(T item)
     {
-        Node<T> current = head;
+        Node<T> current = Head;
         while (current != null)
         {
             if (Equals(current.Data, item))
@@ -67,12 +67,12 @@ public class myLinkedList<T>
     }
     public void Reverse()
     {
-        if (head == null || head.Next == null)
+        if (Head == null || Head.Next == null)
             return; 
     
         Node<T> previous = null;
-        Node<T> current = head;
-        tail = head; 
+        Node<T> current = Head;
+        Tail = Head; 
     
         while (current != null)
         {
@@ -82,13 +82,13 @@ public class myLinkedList<T>
             current = next;               // двигаем current вперед
         }
     
-        head = previous; 
+        Head = previous; 
     }
     
     public List<int> GetIndexes(T item)
     {
         List<int> indexes = new List<int>();
-        Node<T> current = head;
+        Node<T> current = Head;
         int index = 0;
 
         while (current != null)
@@ -109,24 +109,24 @@ public class myLinkedList<T>
     public bool RemoveAt(int position)
     {
         // Проверка корректности позиции
-        if (position < 1 || position > count)
+        if (position < 1 || position > Count)
         {
-            Console.WriteLine($"Ошибка: позиция {position} вне диапазона (1-{count})");
+            Console.WriteLine($"Ошибка: позиция {position} вне диапазона (1-{Count})");
             return false;
         }
     
         // Удаление первого элемента
         if (position == 1)
         {
-            head = head.Next;
-            if (head == null) 
-                tail = null;
-            count--;
+            Head = Head.Next;
+            if (Head == null) 
+                Tail = null;
+            Count--;
             return true;
         }
     
         // Поиск элемента 
-        Node<T> current = head;
+        Node<T> current = Head;
         for (int i = 1; i < position - 1; i++)
         {
             current = current.Next;
@@ -135,18 +135,18 @@ public class myLinkedList<T>
         Node<T> toDelete = current.Next; 
         current.Next = toDelete.Next; 
         
-        if (toDelete == tail)
-            tail = current;
+        if (toDelete == Tail)
+            Tail = current;
     
-        count--;
+        Count--;
         return true;
     }
     public bool InsertAt(T data, int position)
     {
         // Проверка корректности позиции (можно вставлять и после последнего)
-        if (position < 1 || position > count + 1)
+        if (position < 1 || position > Count + 1)
         {
-            Console.WriteLine($"Ошибка: позиция {position} вне диапазона (1-{count + 1})");
+            Console.WriteLine($"Ошибка: позиция {position} вне диапазона (1-{Count + 1})");
             return false;
         }
     
@@ -155,16 +155,16 @@ public class myLinkedList<T>
         // Вставка в начало
         if (position == 1)
         {
-            newNode.Next = head;
-            head = newNode;
-            if (tail == null) // если список был пуст
-                tail = newNode;
-            count++;
+            newNode.Next = Head;
+            Head = newNode;
+            if (Tail == null) // если список был пуст
+                Tail = newNode;
+            Count++;
             return true;
         }
     
         // Поиск позиции для вставки
-        Node<T> current = head;
+        Node<T> current = Head;
         for (int i = 1; i < position - 1; i++)
         {
             current = current.Next;
@@ -176,16 +176,16 @@ public class myLinkedList<T>
     
         // Если вставляем в конец, обновляем tail
         if (newNode.Next == null)
-            tail = newNode;
+            Tail = newNode;
     
-        count++;
+        Count++;
         return true;
     }
     
     // вывод
     public void Print()
     {
-        Node<T> current = head;
+        Node<T> current = Head;
         while (current != null) {
             Console.Write(current.Data + " -> ");
             current = current.Next;
