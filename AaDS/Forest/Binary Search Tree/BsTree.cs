@@ -115,7 +115,7 @@ public class BsTree
     }
 
     /// <summary>
-    /// PREFIX_TRAVERSE (Pre-order) - обход по порядку: вершина, лево�� поддерево, правое поддерево
+    /// PREFIX_TRAVERSE (Pre-order) - обход по порядку: вершина, левое поддерево, правое поддерево
     /// Элементы выводятся как они расположены в дереве
     /// </summary>
     public void PrefixTraverse()
@@ -160,5 +160,24 @@ public class BsTree
     {
         return Find(_root, key);
     }
-    
+
+    private BtNode? Find(BtNode? current, int key)
+    {
+        if (current == null)
+        {
+            return null;
+        }
+        if (key == current.Key)
+        {
+            return current;
+        }
+        if (key > current.Key)
+        {
+            return Find(current.Right, key);
+        }
+        else
+        {
+            return Find(current.Left, key);
+        }
+    }
 }

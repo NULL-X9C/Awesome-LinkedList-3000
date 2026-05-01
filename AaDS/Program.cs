@@ -9,8 +9,6 @@ using AaDS.Forest.Binary_Search_Tree;
 // Тестируем новые методы обхода дерева из задания 2
 BstProcessor.Run();
 
-// var process = new TreeProcessor();
-// process.ProcessTree();
 
 
 
