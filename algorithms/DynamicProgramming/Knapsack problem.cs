@@ -69,7 +69,6 @@ public class KnapsackProblem
         Array.Sort(indices, (a, b) =>
             ((double)values[b] / weights[b]).CompareTo((double)values[a] / weights[a]));
 
-        // Таблица для вывода (те же размеры, что и в DP)
         int[,] greedyDp = new int[n + 1, W + 1];
         
         for (int i = 1; i <= n; i++)
