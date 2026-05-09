@@ -22,6 +22,8 @@ public class KnapsackProblem
         // Разница: почти в 2 раза!
         KnapsackGreedy([4, 4, 3, 3], [40, 40, 30, 30], 8);
         Knapsack([4, 4, 3, 3], [40, 40, 30, 30], 8);
+        Knapsack([4, 4, 2, 7, 4], [4, 4, 8, 6, 1], 16);
+        KnapsackGreedy([4, 4, 2, 7, 4], [4, 4, 8, 6, 1], 16);
     }
     public static int Knapsack(int[] weights, int[] values, int W)
     {
