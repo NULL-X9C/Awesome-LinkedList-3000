@@ -5,8 +5,8 @@ public class Program
     const string DATA_FOLDER = "graphs_data2";
     const string RESULT_FILE = "results2.csv";
     const int MIN_SIZE = 10;
-    const int MAX_SIZE = 1000; // Измените на 10000, если готовы ждать часами
-    const int FILES_PER_SIZE = 3; // Всего ~90 файлов
+    const int MAX_SIZE = 1000; 
+    const int FILES_PER_SIZE = 3; 
 
     static void Main()
      {
