@@ -10,16 +10,18 @@ public class Program
 
     static void Main()
      {
-         Console.WriteLine("1. Генерация входных данных...");
-        // Generation.GenerateGraphs(DATA_FOLDER, MIN_SIZE, MAX_SIZE, FILES_PER_SIZE);
+         TestRunner.GenerateAndRunTests("test_cases");
+         
+        //  Console.WriteLine("1. Генерация входных данных...");
+        // // Generation.GenerateGraphs(DATA_FOLDER, MIN_SIZE, MAX_SIZE, FILES_PER_SIZE);
+        //
+        //  Console.WriteLine("2. Запуск бенчмарков...");
+        //  var results = Benchmarks.RunBenchmarks(DATA_FOLDER, MIN_SIZE, MAX_SIZE, FILES_PER_SIZE);
+        //
+        //  Console.WriteLine("3. Сохранение результатов...");
+        //  SaveResults(results, RESULT_FILE);
      
-         Console.WriteLine("2. Запуск бенчмарков...");
-         var results = Benchmarks.RunBenchmarks(DATA_FOLDER, MIN_SIZE, MAX_SIZE, FILES_PER_SIZE);
-     
-         Console.WriteLine("3. Сохранение результатов...");
-         SaveResults(results, RESULT_FILE);
-     
-         Console.WriteLine("Готово. Откройте results.csv в Excel для построения графиков.");
+         Console.WriteLine("Готово.");
      }
     
     static void SaveResults(List<string> data, string file)

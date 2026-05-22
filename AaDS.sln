@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithms", "algorithms\al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semesterWork1", "semesterWork1\semesterWork1.csproj", "{0A2FEDB7-4863-445F-BC11-AC0D82EBECBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemestrWork2", "SemestrWork2\SemestrWork2.csproj", "{EA304C82-CEFB-4771-8D1C-1052358936BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{0A2FEDB7-4863-445F-BC11-AC0D82EBECBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2FEDB7-4863-445F-BC11-AC0D82EBECBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2FEDB7-4863-445F-BC11-AC0D82EBECBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA304C82-CEFB-4771-8D1C-1052358936BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA304C82-CEFB-4771-8D1C-1052358936BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA304C82-CEFB-4771-8D1C-1052358936BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA304C82-CEFB-4771-8D1C-1052358936BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
